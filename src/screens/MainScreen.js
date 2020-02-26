@@ -18,7 +18,7 @@ export default class MainScreen extends Component {
     render() {
         return (
             <Container>
-                <Header style={{backgroundColor: 'white'}}>
+                <Header style={{backgroundColor: 'white', height: 80}}>
                 <StatusBar barStyle="dark-content" backgroundColor={'transparent'} translucent={true} />
                     <Left>
                         <TouchableOpacity>
@@ -28,7 +28,7 @@ export default class MainScreen extends Component {
                     <Body >
                         <Title style={styles.headerTitle}>Instagram</Title>
                     </Body>
-                    <Right> 
+                    <Right>
                         <TouchableOpacity>
                             <Icon name="ios-send" style={{paddingRight: 10, paddingTop: 10}}/>
                         </TouchableOpacity>
@@ -78,7 +78,5 @@ const styles = StyleSheet.create({
         color: 'black',
         width: 265,
         paddingTop: 10,
-        fontStyle: 'italic',
-
     }
 });
